@@ -2,10 +2,11 @@ var = b
 local op = {
     ["+"] = function(x,y,z) return x+y+z end,
     ["-"] = function(x,y,z) return x-y-z end,
-    ["*"] = function(x,y,z) return x*y+x*z+y*z-z-z end,
+    ["*"] = function(x,y,z) return x*y*z end,
     ["/"] = function(x,y,z) return x/y/z end
 }
 local op1 = {
+	["*"] = function(x,y,z) return x*y+x*z+y*z-z-z end,
 	["/"] = function(x,y,z) return x/y+y/1+z-y end
 }
 b = "0"
